@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title></title>
+    {% load static %}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar  navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="/ShoppingStore/" class="navbar-brand">Shopping store</a>
+                </div>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/signup/"><span class="glyphicon glyphicon-user">SignUp</span></a></li>
+                        <li><a href="/login/"><span class="glyphicon glyphicon-log-in">Login</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        {% load static %}
+        <section class="banner-image">
+            <div class="container">
+                <div class="banner-content">
+                    <h1>Welcome to the shopping store.</h1>
+                    <p>You can find big discounts on all premium brands</p>
+                    <a href="/product/" class="btn btn-danger btn-lg active">Shop Now</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="padding-20"></div>
+                <div class="row">
+                    <div class="col-xs-5 text-center">
+                        <div class="thumbnail">
+                            {% load static %}
+                            <a href="/product/"><img src="{% static 'img/j.jpg' %}" alt="product"></a>
+                            <div class="caption">
+                                <h2>Jeans</h2>
+                                <p>Get the best jeans(formal/party wear) from the best brands.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-5 text-center">
+                        <div class="thumbnail">
+                            {% load static %}
+                            <a href="/product/"><img src="{% static 'img/watch.jpg' %}" alt="Watches"></a>
+                            <div class="caption">
+                                <h2>Watches</h2>
+                                <p>Choose among the best Watches available in the world.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-5 text-center">
+                        <div class="thumbnail">
+                            {% load static %}
+                            <a href="/product/"><img src="{%static 'img/shirt3.jpg' %}" alt="Shirt"></a>
+                            <div class="caption">
+                                <h2>Shirts</h2>
+                                <p>Our exquisite collection of shirts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-5 text-center">
+                        <div class="thumbnail">
+                            {% load static %}
+                            <a href="/product/"><img src="{% static 'img/shoes.jpg' %}" alt="Shoes"></a>
+                            <div class="caption">
+                                <h2>Shoes</h2>
+                                <p>Our collection of branded shoes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-5 text-center">
+                        <div class="thumbnail">
+                            {% load static %}
+                            <a href="/product/"><img src="{% static 'img/belts.jpg' %}" alt="Belts"></a>
+                            <div class="caption">
+                                <h2>Belts</h2>
+                                <p>Our new collection of belts(Pure Leather,PU leather) and wide range available.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-5 text-center">
+                        <div class="thumbnail">
+                            {% load static %}
+                            <a href="/product/"><img src="{% static 'img/casuals.jpg' %}" alt="casuals"></a>
+                            <div class="caption">
+                                <h2>Casuals</h2>
+                                <p>Our collection of casuals for both men and women.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="padding-20"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <center>
+            </center>
+        </div>
+    </footer>
+</body>
+
+</html>
